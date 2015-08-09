@@ -1,9 +1,7 @@
 # internet_of_things_simulator
 AutoSIM IoT - Internet of Things Simulator
 
-# Dual License
-# GPL v3.0, and
-# Commercial use LICENSE
+# Dual License - GPL v3.0, and Commercial use License 
 
 Commercial use of the simulator for anything e.g. development, testing, integration, production, uat, saas or cloud, hosted or on premise is NOT PERMITTED!!!
 
@@ -16,7 +14,12 @@ Compared to competitors who offer pricing based on #devices simulated starting f
 
 AutoSIM has been tested on clusters to simulate 100million+ devices.
 
-AutoSIM is specifically suited for large scale Internet of Things Solutions e.g. Smart Cities, Connected and Autonomous Vehicles, Smart Energy & Smart Grids, Smart Healthcare etc.
+AutoSIM is specifically suited for large scale Internet of Things Solutions for example
+
+- Smart Cities
+- Connected and Autonomous Vehicles
+- Smart Energy & Smart Grids
+- Smart Healthcare etc.
 
 # Protocols
 
