@@ -23,7 +23,7 @@ AutoSIM is specifically suited for large scale Internet of Things Solutions for 
 
 # Protocols
 
-AutoAIM supports 7 built in protocols and easy extendibility for more protocols
+AutoAIM supports 10 built in protocols and easy extendibility for more protocols
 
 - SmartM2M
 - LWM2M
@@ -32,6 +32,9 @@ AutoAIM supports 7 built in protocols and easy extendibility for more protocols
 - Automatski (Streamer & Chatterbox)
 - Rest
 - Websockets
+- UDP
+- XMPP
+- AMQP
 + other custom protocols
 
 # Further
