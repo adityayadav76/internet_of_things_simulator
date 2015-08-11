@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things AMQP Connection Factories
+Bundle-Description: A bundle that exposes connection factories for AMQP connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.amqp.AMQPServiceActivator
+Import-Package: javax.net, javax.net.ssl, org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.amqp

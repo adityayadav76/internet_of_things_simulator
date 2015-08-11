@@ -1,0 +1,13 @@
+{
+   "connections":[
+   		{
+			"name": "mystreamerconnection",
+   			"host": "localhost",
+   			"port": 7911,
+   			"username": "defaultAccessKey",
+   			"password": "defaultSecretKey",
+				
+			"connectorClassName": "com.automatski.autosim.automatski.SampleStreamerConnection"   		
+   		}
+   ]
+}

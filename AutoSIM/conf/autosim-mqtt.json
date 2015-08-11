@@ -1,0 +1,12 @@
+{
+   "connections":[
+   		{
+			"name": "mymqttconnection",
+			"url": "tcp://test.mosquitto.org:1883",
+			"username" :"developer",
+			"password" :"yourpassword",
+				
+			"connectorClassName": "com.automatski.autosim.mqtt.SampleMQTTConnection"   		
+   		}
+   ]
+}

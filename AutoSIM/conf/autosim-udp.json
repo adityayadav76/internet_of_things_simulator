@@ -1,0 +1,11 @@
+{
+   "connections":[
+   		{
+			"name": "myudpconnection",
+   			"host": "203.0.113.0",
+   			"port": 4446,
+				
+			"connectorClassName": "com.automatski.autosim.udp.SampleUDPConnection"   		
+   		}
+   ]
+}

@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things Simulator API
+Bundle-Description: A bundle that exposes an api for AutoSIM
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.api.APIServiceActivator
+Import-Package: javax.sql.rowset, javax.xml.bind.annotation, org.w3c.dom, org.xml.sax, javax.xml.namespace, com.sun.net.httpserver, javax.xml.parsers, org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.api

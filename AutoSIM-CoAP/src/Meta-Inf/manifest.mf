@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things CoAP Connection Factories
+Bundle-Description: A bundle that exposes connection factories for CoAP connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.coap.CoAPServiceActivator
+Import-Package: org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.coap, org.ws4d.coap.interfaces, org.ws4d.coap.messages

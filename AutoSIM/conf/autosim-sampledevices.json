@@ -1,0 +1,45 @@
+{
+   "devices":[
+   		{
+			"name":  "myrestdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyRestDevice",
+			"connectionName": "myrestconnection"
+   		},
+   		{
+			"name":  "mywebsocketdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyWebSocketDevice",
+			"connectionName": "mywebsocketconnection"
+   		},
+   		{
+			"name":  "mystreamerdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyStreamerDevice",
+			"connectionName": "mystreamerconnection"
+   		},
+   		{
+			"name":  "myudpdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyUDPDevice",
+			"connectionName": "myudpconnection"
+   		},
+   		{
+			"name":  "myamqpdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyAMQPDevice",
+			"connectionName": "myamqpconnection"
+   		},
+   		{
+			"name":  "myxmppdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyXMPPDevice",
+			"connectionName": "myxmppconnection"
+   		},
+   		{
+			"name":  "mymqttdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyMQTTDevice",
+			"connectionName": "mymqttconnection"
+   		},
+   		{
+			"name":  "mycoapdevice",
+			"deviceClassName": "com.automatski.autosim.sampledevices.MyCoAPDevice",
+			"connectionName": "mycoapconnection"
+   		}
+   		
+   ]
+}

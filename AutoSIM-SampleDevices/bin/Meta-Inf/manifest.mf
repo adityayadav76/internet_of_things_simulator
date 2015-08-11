@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things Sample Devices Factories
+Bundle-Description: A bundle that exposes devices factories for Sample Devices
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.sampledevices.SampleDevicesServiceActivator
+Import-Package: org.osgi.framework, com.automatski.autosim.environments, com.automatski.autosim.streamer.api,com.automatski.autosim.ureactive.api
+Export-Package: com.automatski.autosim.sampledevices

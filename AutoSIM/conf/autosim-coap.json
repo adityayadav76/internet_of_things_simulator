@@ -1,0 +1,13 @@
+{
+   "connections":[
+   		{
+			"name": "mycoapconnection",
+			"host": "californium.eclipse.org",
+			"port": 5683,
+			"username" :"",
+			"password" :"",
+				
+			"connectorClassName": "com.automatski.autosim.coap.SampleCoAPConnection"   		
+   		}
+   ]
+}

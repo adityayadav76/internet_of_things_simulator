@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="autosim-coap" default="bundle" basedir=".">
+	<property name="version" value="1.0.0" />
+
+
+	<target name="bundle" description="jar the osgi bundle">
+		<copy todir="./bin">
+			<fileset dir="./lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+		<delete file="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"/>
+		<jar jarfile="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"
+			basedir="./bin" includes="**/*.*" manifest="./bin/META-INF/MANIFEST.MF">
+			<manifest>
+				<attribute name="Bundle-Name" value="${ant.project.name}" />
+				<attribute name="Bundle-Version" value="${version}" />
+				<attribute name="Bundle-ClassPath"
+					value=".,gson-2.3.1.jar,commons-cli-1.2.jar,log4j-1.2.16.jar" />
+			</manifest>
+		</jar>
+		<delete>
+    		<fileset dir="./bin" includes="**/*.jar"/>
+  		</delete>
+	</target>
+
+</project>

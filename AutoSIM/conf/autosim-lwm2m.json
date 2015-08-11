@@ -1,0 +1,12 @@
+{
+   "connections":[
+   		{
+			"name": "mylwm2mconnection",
+			"url": "ws://localhost:10090/events/",
+			"username" :"",
+			"password" :"",
+				
+			"connectorClassName": "com.automatski.autosim.websocket.SampleWebSocketConnection"   		
+   		}
+   ]
+}

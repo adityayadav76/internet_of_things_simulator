@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="autosim-rest" default="bundle" basedir=".">
+	<property name="version" value="1.0.0" />
+
+
+	<target name="bundle" description="jar the osgi bundle">
+		<copy todir="./bin">
+			<fileset dir="./lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+		<delete file="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"/>
+		<jar jarfile="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"
+			basedir="./bin" includes="**/*.*" manifest="./bin/META-INF/MANIFEST.MF">
+			<manifest>
+				<attribute name="Bundle-Name" value="${ant.project.name}" />
+				<attribute name="Bundle-Version" value="${version}" />
+				<attribute name="Bundle-ClassPath"
+					value=".,gson-2.3.1.jar,com.fasterxml.jackson.annotations.jar,com.fasterxml.jackson.core.jar,com.fasterxml.jackson.csv.jar,com.fasterxml.jackson.databind.jar,com.fasterxml.jackson.jaxb.jar,com.fasterxml.jackson.jsonschema.jar,com.fasterxml.jackson.smile.jar,com.fasterxml.jackson.xml.jar,com.fasterxml.jackson.yaml.jar,com.google.gdata.client.jar,com.google.gdata.jar,com.google.gson.jar,com.google.guava.jar,com.google.guice.jar,com.google.gwt.server.jar,com.google.protobuf.jar,com.google.sdc.jar,com.sun.jaxb.jar,com.sun.syndication.jar,com.thoughtworks.xstream.jar,com.wordnik.swagger.annotations.jar,com.wordnik.swagger.core.jar,com.wordnik.swagger.models.jar,javax.inject.jar,javax.mail.jar,javax.servlet.jar,javax.ws.rs-api-2.0-sources.jar,javax.ws.rs.jar,net.jcip.annotations.jar,net.oauth.jar,net.sf.cglib.jar,net.sourceforge.nekohtml.jar,ognl.jar,org.aopalliance.jar,org.apache.commons.codec.jar,org.apache.commons.collections.jar,org.apache.commons.dbcp.jar,org.apache.commons.fileupload.jar,org.apache.commons.io.jar,org.apache.commons.lang.jar,org.apache.commons.logging.jar,org.apache.commons.pool.jar,org.apache.httpclient.jar,org.apache.httpcore.jar,org.apache.httpmime.jar,org.apache.james.mime4j.jar,org.apache.log4j.jar,org.apache.lucene.jar,org.apache.solr.common.jar,org.apache.solr.jar,org.apache.tika.jar,org.apache.tika.parsers.jar,org.apache.velocity.jar,org.codehaus.jettison.jar,org.codehaus.woodstox.core.jar,org.codehaus.woodstox.stax2api.jar,org.eclipse.emf.common.jar,org.eclipse.emf.ecore.jar,org.eclipse.emf.ecore.xmi.jar,org.eclipse.jetty.client.jar,org.eclipse.jetty.http.jar,org.eclipse.jetty.io.jar,org.eclipse.jetty.server.jar,org.eclipse.jetty.spdy.client.jar,org.eclipse.jetty.spdy.core.jar,org.eclipse.jetty.spdy.http.common.jar,org.eclipse.jetty.spdy.http.server.jar,org.eclipse.jetty.spdy.server.jar,org.eclipse.jetty.util.jar,org.freemarker.jar,org.hamcrest.jar,org.javassist.jar,org.jboss.resteasy.jaxrs.jar,org.jdom.jar,org.jibx.runtime.jar,org.joda.time.jar,org.json.jar,org.jsslutils.jar,org.junit.jar,org.mongodb.jar,org.openid4java.jar,org.osgi.compendium.jar,org.osgi.core.jar,org.raml.parser.jar,org.restlet.example.jar,org.restlet.ext.apispark.jar,org.restlet.ext.atom.jar,org.restlet.ext.crypto.jar,org.restlet.ext.e4.jar,org.restlet.ext.emf.jar,org.restlet.ext.fileupload.jar,org.restlet.ext.freemarker.jar,org.restlet.ext.gson.jar,org.restlet.ext.guice.jar,org.restlet.ext.gwt.jar,org.restlet.ext.html.jar,org.restlet.ext.httpclient.jar,org.restlet.ext.jaas.jar,org.restlet.ext.jackson.jar,org.restlet.ext.javamail.jar,org.restlet.ext.jaxb.jar,org.restlet.ext.jaxrs.jar,org.restlet.ext.jdbc.jar,org.restlet.ext.jetty.jar,org.restlet.ext.jibx.jar,org.restlet.ext.json.jar,org.restlet.ext.jsslutils.jar,org.restlet.ext.lucene.jar,org.restlet.ext.nio.jar,org.restlet.ext.oauth.jar,org.restlet.ext.odata.jar,org.restlet.ext.openid.jar,org.restlet.ext.raml.jar,org.restlet.ext.rdf.jar,org.restlet.ext.rome.jar,org.restlet.ext.sdc.jar,org.restlet.ext.simple.jar,org.restlet.ext.sip.jar,org.restlet.ext.slf4j.jar,org.restlet.ext.spring.jar,org.restlet.ext.swagger.jar,org.restlet.ext.thymeleaf.jar,org.restlet.ext.velocity.jar,org.restlet.ext.wadl.jar,org.restlet.ext.xml.jar,org.restlet.ext.xstream.jar,org.restlet.jar,org.restlet.test.jar,org.simpleframework.jar,org.simpleframework.xml.jar,org.slf4j.jar,org.springframework.beans.jar,org.springframework.context.jar,org.springframework.core.jar,org.springframework.expression.jar,org.springframework.web.jar,org.springframework.webmvc.jar,org.testng.jar,org.thymeleaf.jar,org.yaml.snakeyaml.jar,scala-library.jar,scalap.jar" />
+			</manifest>
+		</jar>
+		<delete>
+    		<fileset dir="./bin" includes="**/*.jar"/>
+  		</delete>
+	</target>
+
+</project>

@@ -1,0 +1,14 @@
+{
+   "connections":[
+   		{
+			"name": "myxmppconnection",
+   			"host": "earl.jabber.org",
+   			"port": 8222,
+   			"username": "",
+   			"password": "",
+   			"servicename": "jabber.org",
+				
+			"connectorClassName": "com.automatski.autosim.aqmp.SampleXMPPConnection"   		
+   		}
+   ]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="autosim-websocket" default="bundle" basedir=".">
+	<property name="version" value="1.0.0" />
+
+
+	<target name="bundle" description="jar the osgi bundle">
+		<copy todir="./bin">
+			<fileset dir="./lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+		<delete file="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"/>
+		<jar jarfile="../AutoSIM/auto-deploy/${ant.project.name}-${version}.jar"
+			basedir="./bin" includes="**/*.*" manifest="./bin/META-INF/MANIFEST.MF">
+			<manifest>
+				<attribute name="Bundle-Name" value="${ant.project.name}" />
+				<attribute name="Bundle-Version" value="${version}" />
+				<attribute name="Bundle-ClassPath"
+					value=".,gson-2.3.1.jar,asm-5.0.1.jar,asm-commons-5.0.1.jar,cdi-core-9.3.2.v20150730.jar,cdi-servlet-9.3.2.v20150730.jar,cdi-websocket-9.3.2.v20150730.jar,fcgi-client-9.3.2.v20150730.jar,fcgi-server-9.3.2.v20150730.jar,http2-common-9.3.2.v20150730.jar,http2-hpack-9.3.2.v20150730.jar,http2-server-9.3.2.v20150730.jar,javax-websocket-client-impl-9.3.2.v20150730.jar,javax-websocket-server-impl-9.3.2.v20150730.jar,javax.annotation-api-1.2.jar,javax.mail.glassfish-1.4.1.v201005082020.jar,javax.security.auth.message-1.0.0.v201108011116.jar,javax.transaction-api-1.2.jar,javax.websocket-api-1.0.jar,jetty-alpn-server-9.3.2.v20150730.jar,jetty-annotations-9.3.2.v20150730.jar,jetty-client-9.3.2.v20150730.jar,jetty-continuation-9.3.2.v20150730.jar,jetty-deploy-9.3.2.v20150730.jar,jetty-http-9.3.2.v20150730.jar,jetty-infinispan-9.3.2.v20150730.jar,jetty-io-9.3.2.v20150730.jar,jetty-jaas-9.3.2.v20150730.jar,jetty-jaspi-9.3.2.v20150730.jar,jetty-jmx-9.3.2.v20150730.jar,jetty-jndi-9.3.2.v20150730.jar,jetty-monitor-9.3.2.v20150730.jar,jetty-nosql-9.3.2.v20150730.jar,jetty-plus-9.3.2.v20150730.jar,jetty-proxy-9.3.2.v20150730.jar,jetty-quickstart-9.3.2.v20150730.jar,jetty-rewrite-9.3.2.v20150730.jar,jetty-schemas-3.1.jar,jetty-security-9.3.2.v20150730.jar,jetty-server-9.3.2.v20150730.jar,jetty-servlet-9.3.2.v20150730.jar,jetty-servlets-9.3.2.v20150730.jar,jetty-setuid-java-1.0.3.jar,jetty-spring-9.3.2.v20150730.jar,jetty-util-9.3.2.v20150730.jar,jetty-webapp-9.3.2.v20150730.jar,jetty-xml-9.3.2.v20150730.jar,org.apache.taglibs.taglibs-standard-impl-1.2.1.jar,org.apache.taglibs.taglibs-standard-spec-1.2.1.jar,org.eclipse.jetty.apache-jsp-9.3.2.v20150730.jar,org.eclipse.jetty.orbit.org.eclipse.jdt.core-3.8.2.v20130121.jar,org.mortbay.jasper.apache-el-8.0.23.M1.jar,org.mortbay.jasper.apache-jsp-8.0.23.M1.jar,servlet-api-3.1.jar,start.jar,test-mock-resources-9.3.2.v20150730.jar,websocket-api-9.3.2.v20150730.jar,websocket-client-9.3.2.v20150730.jar,websocket-common-9.3.2.v20150730.jar,websocket-server-9.3.2.v20150730.jar,websocket-servlet-9.3.2.v20150730.jar" />
+			</manifest>
+		</jar>
+		<delete>
+    		<fileset dir="./bin" includes="**/*.jar"/>
+  		</delete>
+	</target>
+
+</project>

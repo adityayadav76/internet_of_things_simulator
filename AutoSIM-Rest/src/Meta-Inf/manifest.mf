@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things Rest Connection Factories
+Bundle-Description: A bundle that exposes connection factories for Rest connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.rest.RestServiceActivator
+Import-Package: javax.net.ssl, javax.sql.rowset, javax.xml.bind.annotation, org.w3c.dom, org.xml.sax, javax.xml.namespace, com.sun.net.httpserver, javax.xml.parsers, org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.rest

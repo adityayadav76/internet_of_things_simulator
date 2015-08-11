@@ -1,0 +1,16 @@
+{
+  "server": {
+  	"port": 8911,
+  	"access": [
+  		{
+   			"accessKey": "defaultAccessKey",
+   			"secretKey": "defaultSecretKey"
+		},
+		{
+   			"accessKey": "defaultAccessKey2",
+   			"secretKey": "defaultSecretKey2"
+		}    		
+	]
+   }
+   
+}

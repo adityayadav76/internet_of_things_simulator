@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things SmartM2M Connection Factories
+Bundle-Description: A bundle that exposes connection factories for SmartM2M connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.smartm2m.SmartM2MServiceActivator
+Import-Package: org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.smartm2m

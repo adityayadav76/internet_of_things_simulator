@@ -1,0 +1,12 @@
+{
+   "connections":[
+   		{
+			"name": "myrestconnection",
+			"url": "http://localhost:10080/example/json/product/post",
+			"username" :"",
+			"password" :"",
+				
+			"connectorClassName": "com.automatski.autosim.rest.SampleRestConnection"   		
+   		}
+   ]
+}

@@ -1,0 +1,10 @@
+{
+   "connections":[
+   		{
+			"name": "myamqpconnection",
+   			"url": "amqp://localhost:5672",
+				
+			"connectorClassName": "com.automatski.autosim.amqp.SampleAMQPConnection"   		
+   		}
+   ]
+}

@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things WebSocket Connection Factories
+Bundle-Description: A bundle that exposes connection factories for WebSocket connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.websocket.WebSocketServiceActivator
+Import-Package: javax.net.ssl, org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.websocket

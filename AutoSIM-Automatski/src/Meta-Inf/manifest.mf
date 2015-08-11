@@ -1,0 +1,7 @@
+Bundle-Name: AutoSIM - Internet of Things Automatski Connection Factories
+Bundle-Description: A bundle that exposes connection factories for Automatski connections
+Bundle-Vendor: www.automatski.com
+Bundle-Version: 1.0.0
+Bundle-Activator: com.automatski.autosim.automatski.AutomatskiServiceActivator
+Import-Package: org.osgi.framework, com.automatski.autosim.environments
+Export-Package: com.automatski.autosim.automatski, com.automatski.autosim.streamer.api,com.automatski.autosim.ureactive.api

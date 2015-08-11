@@ -1,0 +1,60 @@
+{
+   "environments":[
+   		{
+			"name": "myrestdeviceenvironment",
+			"count": 10000,
+			"device": "myrestdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 100
+   		},
+   		{
+   			"name": "mywebsocketdeviceenvironment",
+			"count": 3,
+			"device": "mywebsocketdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "mystreamerdeviceenvironment",
+			"count": 3,
+			"device": "mystreamerdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "myudpdeviceenvironment",
+			"count": 3,
+			"device": "myudpdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "myamqpdeviceenvironment",
+			"count": 3,
+			"device": "myamqpdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "myxmppdeviceenvironment",
+			"count": 3,
+			"device": "myxmppdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "mymqttdeviceenvironment",
+			"count": 3,
+			"device": "mymqttdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		},
+   		{
+   			"name": "mycoapdeviceenvironment",
+			"count": 3,
+			"device": "mycoapdevice",
+			"delayInMilliSeconds": 3000,
+			"threads": 3
+   		}
+   ]
+}
