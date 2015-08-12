@@ -23,7 +23,7 @@ AutoSIM is specifically suited for large scale Internet of Things Solutions for 
 
 # Protocols
 
-AutoAIM supports 10 built in protocols and easy extendibility for more protocols
+AutoSIM supports 10 built in protocols and easy extendibility for more protocols
 
 - SmartM2M
 - LWM2M
